@@ -1,0 +1,54 @@
+@charset "UTF-8";
+body{
+    background-color: white; /*mudança de cores ao fundo*/
+    color:black; /*mudanças de cores das letras*/
+}
+p {
+    text-align: justify; /* Alinhamento dos paragrafos com o espaçamento no inicio*/
+    text-indent: 50px;
+}
+/*Formatação de imagens com legenda*/
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white; /*configuração da cor da borda*/
+    box-shadow: 1px 1px 4px black; /*configuração da sombra aos redores da imagem e a cor*/
+}
+figure.foto-legenda img {
+    width: 100%; /*tamanho e largura da imagem*/
+    height:100%;
+}
+figure.foto-legenda figcaption{
+    opacity: 0;
+    position: absolute; /* */
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white; /*Cor da letra dentro em cima da imagem */
+    width: 100%; /*largura*/
+    height: 100%; /*altura da borda */
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption{
+opacity:1;
+}
+/* Formatação do menu */
+nav#menu {
+    display: block;
+}
+nav#menu ul{
+     list-style: none;
+     text-transform: uppercase;
+     position:absolute;
+     top: -20px;
+     left: 850px;
+}
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
+nav#menu h1{
+    display: none;
+}
